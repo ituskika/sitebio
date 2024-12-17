@@ -1,0 +1,108 @@
+/* Resetando o padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('beautiful-anime-character-cartoon-scene.jpg'); /* Imagem local enviada */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Garante que o fundo não se move ao rolar */
+    color: #fff; /* Cor do texto alterada para branco para contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Garantir que não haja margens extras */
+}
+
+/* Partículas */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+/* Container principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Cor branca com 80% de opacidade */
+    border-radius: 15px;
+    border: 3px solid #FFA07A; /* Borda com a cor laranja suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%; /* 90% da largura da tela, para garantir que se ajuste em dispositivos móveis */
+    max-width: 320px; /* Tamanho máximo para desktop */
+    padding: 25px;
+    text-align: center;
+    position: relative; /* Para posicionar o contador de visualizações */
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    position: relative; /* Para usar o box-shadow no contorno */
+}
+
+.profile-img {
+    width: 150px; /* Aumentando o tamanho da imagem */
+    height: 150px; /* Aumentando a altura da imagem */
+    border-radius: 50%; /* Tornando a imagem circular */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+    box-shadow: none; /* Removendo o contorno */
+}
+
+/* Efeito para o ponteiro do mouse */
+body {
+    cursor: url('https://upload.wikimedia.org/wikipedia/commons/4/46/Pointer_icon.svg'), auto; /* Ponteiro personalizado */
+}
+
+/* Estilos do título (nome) */
+.bio h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FF6347; /* Cor do título em rosa suave */
+    text-shadow: 0 0 5px #FF6347, 0 0 10px #FF6347; /* Neon suave no nome */
+}
+
+.bio p {
+    font-size: 14px;
+    color: #fff; /* Texto branco */
+    margin-bottom: 20px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.link {
+    display: block;
+    background-color: #FF4500; /* Cor de fundo dos links: vermelho suave */
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 18px;
+    margin: 8px 0;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+    font-weight: bold;
+}
+
+/* Efeito Neon quando passar o mouse */
+.link:hover {
+    background-color: #FF6600; /* Cor para o hover: laranja mais forte */
+    box-shadow: 0 0 10px #FF6600, 0 0 15px #FF6600, 0 0 20px #FF6600; /* Brilho neon concentrado e mais intenso */
+    text-shadow: 0 0 6px #FF6600, 0 0 10px #FF6600, 0 0 14px #FF6600; /* Sombra do texto com efeito neon laranja */
+}
+
+/* Efeito Neon quando o botão está ativo */
+.link:active {
+    background-color: #FF6600; /* Cor para o clique ativo: laranja mais forte */
+    box-shadow: 0 0 10px #FF6600, 0 0 15px #FF6600, 0 0 20px #FF6600; /* Brilho neon concentrado em laranja */
+    text-shadow: 0 0 6px #FF6600, 0 0 10px #FF6600, 0 0 14px #FF6600; /* Sombra do texto com efeito neon laranja */
+}

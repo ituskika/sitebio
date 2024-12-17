@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itsuki Bio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> <!-- Link para a biblioteca Particles.js -->
+</head>
+<body>
+    <!-- Container de partículas -->
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <!-- Foto de Perfil -->
+        <div class="profile">
+            <img src="discord_fake_avatar_decorations_1734448660474.gif" alt="Foto de Perfil" class="profile-img">
+        </div>
+
+        <!-- Nome e Bio -->
+        <div class="bio">
+            <h1>Itsuki</h1>
+            <p>Links:</p>
+        </div>
+
+        <!-- Links -->
+        <div class="links">
+            <a href="https://github.com/ituskika" class="link" target="_blank">GitHub</a>
+            <a href="https://www.roblox.com/pt/users/5301881246/profile" class="link" target="_blank">Roblox</a>
+            <a href="https://discord.gg/hazzeofc" class="link" target="_blank">Hazze</a>
+        </div>
+    </div>
+
+    <!-- Script para inicializar Particles.js -->
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 50, // Número de partículas
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                shape: {
+                    type: "circle", // Partículas em formato circular
+                },
+                opacity: {
+                    value: 0.5, // Opacidade das partículas
+                    random: true
+                },
+                size: {
+                    value: 3, // Tamanho das partículas
+                    random: true
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    out_mode: "out"
+                }
+            },
+            interactivity: {
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "repulse"
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
